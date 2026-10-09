@@ -1,362 +1,371 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tidewell | About</title>
-  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
-  <link rel="stylesheet" href="../output.css">
+    <title>Tidewell | About</title>
+
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link rel="stylesheet" href="../output.css">
 </head>
 
 <body class="bg-slate-50 text-slate-800">
 
-  <!-- Navbar -->
-  <nav class="border-b border-slate-200 bg-white">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <!-- Header and Navigation -->
+    <header class="border-b border-slate-200 bg-white">
+        <nav aria-label="Main navigation">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-      <!-- Tidewell Brand with Leaf Icon -->
-      <a href="../../index.html" class="flex items-center gap-2 text-2xl font-bold text-teal-600">
-        <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-600 text-white">
-          <svg xmlns="http://www.w3.org/2000/svg"
-               width="22" height="22" viewBox="0 0 24 24"
-               fill="none" stroke="currentColor"
-               stroke-width="2" stroke-linecap="round"
-               stroke-linejoin="round" aria-hidden="true">
-            <path d="M11 20A7 7 0 0 1 4 13C4 5 12 3 20 3c0 8-2 17-10 17Z"/>
-            <path d="M8 16c2-3 5-6 9-9"/>
-          </svg>
-        </span>
-        Tidewell
-      </a>
+                <!-- Tidewell Brand with Leaf Icon -->
+                <a href="../../index.html" class="flex items-center gap-2 text-2xl font-bold text-teal-600">
+                    <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-600 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="22" height="22" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round"
+                             stroke-linejoin="round" aria-hidden="true">
+                            <path d="M11 20A7 7 0 0 1 4 13C4 5 12 3 20 3c0 8-2 17-10 17Z"/>
+                            <path d="M8 16c2-3 5-6 9-9"/>
+                        </svg>
+                    </span>
+                    Tidewell
+                </a>
 
-      <div class="hidden items-center gap-8 md:flex">
-        <a href="../../index.html" class="text-sm font-medium hover:text-cyan-600">Home</a>
-        <a href="about.html" class="text-sm font-medium text-cyan-600">About</a>
-        <a href="contact.html" class="text-sm font-medium hover:text-cyan-600">Contact</a>
-        <a href="signin.html" class="text-sm font-medium hover:text-cyan-600">Sign In</a>
-        <a href="signup.html" class="rounded-lg bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-700">
-          Sign Up
-        </a>
-      </div>
+                <div class="hidden items-center gap-8 md:flex">
+                    <a href="../../index.html" class="text-sm font-medium hover:text-cyan-600">Home</a>
+                    <a href="about.html" class="text-sm font-medium text-cyan-600">About</a>
+                    <a href="contact.html" class="text-sm font-medium hover:text-cyan-600">Contact</a>
+                    <a href="signin.html" class="text-sm font-medium hover:text-cyan-600">Sign In</a>
+                    <a href="signup.html" class="rounded-lg bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-700">
+                        Sign Up
+                    </a>
+                </div>
 
-      <button class="rounded-lg border border-slate-300 px-3 py-2 md:hidden">
-        ☰
-      </button>
-    </div>
-  </nav>
+                <button type="button" aria-label="Menu"
+                        class="rounded-lg border border-slate-300 px-3 py-2 md:hidden">
+                    ☰
+                </button>
 
-  <!-- Page Header -->
-  <section class="bg-white">
-    <div class="mx-auto max-w-5xl px-6 py-20 text-center">
-      <span class="rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-700">
-        About Tidewell
-      </span>
+            </div>
+        </nav>
+    </header>
 
-      <h1 class="mt-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-        Wellness made simple.
-      </h1>
+    <!-- Main Content -->
+    <main>
 
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-        Tidewell is designed to make everyday wellness easier through simple
-        routines, mindful habits, and a calm digital experience.
-      </p>
-    </div>
-  </section>
+        <!-- Page Introduction -->
+        <section class="bg-white" aria-labelledby="about-heading">
+            <div class="mx-auto max-w-5xl px-6 py-20 text-center">
 
-  <!-- Mission -->
-  <section class="py-16">
-    <div class="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:items-center">
+                <span class="rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-700">
+                    About Tidewell
+                </span>
 
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-widest text-cyan-600">
-          Our Mission
-        </p>
+                <h1 id="about-heading" class="mt-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+                    Wellness made simple.
+                </h1>
 
-        <h2 class="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-          Helping people build better everyday habits.
-        </h2>
+                <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+                    Tidewell is designed to make everyday wellness easier through simple
+                    routines, mindful habits, and a calm digital experience.
+                </p>
 
-        <p class="mt-5 leading-7 text-slate-600">
-          We believe wellness does not need to be complicated. Small,
-          consistent actions can create meaningful changes in everyday life.
-        </p>
+            </div>
+        </section>
 
-        <p class="mt-4 leading-7 text-slate-600">
-          Tidewell brings simple ideas for mindfulness, movement, nutrition,
-          and rest into one clean and accessible experience.
-        </p>
+        <!-- Mission -->
+        <section class="py-16" aria-labelledby="mission-heading">
+            <div class="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:items-center">
 
-        <a href="contact.html"
-          class="mt-7 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700">
-          Get in Touch
-        </a>
-      </div>
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-widest text-cyan-600">
+                        Our Mission
+                    </p>
 
-      <div class="rounded-3xl bg-cyan-50 p-8">
-        <div class="rounded-2xl bg-white p-8 shadow-sm">
-          <div class="text-4xl">🌿</div>
+                    <h2 id="mission-heading" class="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+                        Helping people build better everyday habits.
+                    </h2>
 
-          <h3 class="mt-5 text-2xl font-bold text-slate-900">
-            Small habits.
-          </h3>
+                    <p class="mt-5 leading-7 text-slate-600">
+                        We believe wellness does not need to be complicated. Small,
+                        consistent actions can create meaningful changes in everyday life.
+                    </p>
 
-          <p class="mt-3 text-slate-600">
-            Simple routines that fit naturally into everyday life.
-          </p>
+                    <p class="mt-4 leading-7 text-slate-600">
+                        Tidewell brings simple ideas for mindfulness, movement, nutrition,
+                        and rest into one clean and accessible experience.
+                    </p>
 
-          <div class="mt-6 h-2 rounded-full bg-slate-100">
-            <div class="h-2 w-3/4 rounded-full bg-cyan-500"></div>
-          </div>
+                    <a href="contact.html"
+                       class="mt-7 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700">
+                        Get in Touch
+                    </a>
+                </div>
 
-          <p class="mt-2 text-right text-sm text-slate-500">
-            Daily progress
-          </p>
+                <article class="rounded-3xl bg-cyan-50 p-8" aria-label="Small habits summary">
+                    <div class="rounded-2xl bg-white p-8 shadow-sm">
+
+                        <div class="text-4xl" aria-hidden="true">🌿</div>
+
+                        <h3 class="mt-5 text-2xl font-bold text-slate-900">
+                            Small habits.
+                        </h3>
+
+                        <p class="mt-3 text-slate-600">
+                            Simple routines that fit naturally into everyday life.
+                        </p>
+
+                        <div class="mt-6 h-2 rounded-full bg-slate-100">
+                            <div class="h-2 w-3/4 rounded-full bg-cyan-500"></div>
+                        </div>
+
+                        <p class="mt-2 text-right text-sm text-slate-500">
+                            Daily progress
+                        </p>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="bg-white py-16" aria-labelledby="values-heading">
+            <div class="mx-auto max-w-7xl px-6">
+
+                <header class="text-center">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-cyan-600">
+                        What We Value
+                    </p>
+
+                    <h2 id="values-heading" class="mt-3 text-3xl font-bold text-slate-900">
+                        Built around simple principles
+                    </h2>
+
+                    <p class="mx-auto mt-4 max-w-2xl text-slate-600">
+                        Every part of Tidewell focuses on making wellness practical,
+                        approachable, and easy to understand.
+                    </p>
+                </header>
+
+                <div class="mt-12 grid gap-6 md:grid-cols-3">
+
+                    <article class="rounded-2xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl" aria-hidden="true">
+                            🌱
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Simplicity
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-600">
+                            We keep ideas clear and routines easy to understand.
+                        </p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl" aria-hidden="true">
+                            💙
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Balance
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-600">
+                            We believe wellness is about creating balance in everyday life.
+                        </p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl" aria-hidden="true">
+                            ✨
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Consistency
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Small actions become meaningful when they become consistent.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="py-16" aria-label="Tidewell statistics">
+            <div class="mx-auto max-w-7xl px-6">
+
+                <div class="rounded-3xl bg-slate-900 p-8 text-white md:p-12">
+                    <div class="grid gap-8 text-center md:grid-cols-4">
+
+                        <article>
+                            <p class="text-3xl font-bold">10K+</p>
+                            <p class="mt-2 text-sm text-slate-300">Daily users</p>
+                        </article>
+
+                        <article>
+                            <p class="text-3xl font-bold">50+</p>
+                            <p class="mt-2 text-sm text-slate-300">Wellness routines</p>
+                        </article>
+
+                        <article>
+                            <p class="text-3xl font-bold">24/7</p>
+                            <p class="mt-2 text-sm text-slate-300">Accessible experience</p>
+                        </article>
+
+                        <article>
+                            <p class="text-3xl font-bold">4.9/5</p>
+                            <p class="mt-2 text-sm text-slate-300">User experience</p>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Our Approach -->
+        <section class="bg-white py-16" aria-labelledby="approach-heading">
+            <div class="mx-auto max-w-5xl px-6">
+
+                <header class="text-center">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-cyan-600">
+                        Our Approach
+                    </p>
+
+                    <h2 id="approach-heading" class="mt-3 text-3xl font-bold text-slate-900">
+                        A simple path to better days
+                    </h2>
+                </header>
+
+                <div class="mt-12 space-y-6">
+
+                    <article class="flex gap-5 rounded-2xl border border-slate-200 p-6">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-600 font-bold text-white">
+                            1
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Discover</h3>
+                            <p class="mt-2 text-slate-600">
+                                Explore simple wellness ideas that match your everyday routine.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex gap-5 rounded-2xl border border-slate-200 p-6">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-600 font-bold text-white">
+                            2
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Practice</h3>
+                            <p class="mt-2 text-slate-600">
+                                Turn small ideas into simple actions that fit naturally into your day.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex gap-5 rounded-2xl border border-slate-200 p-6">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-600 font-bold text-white">
+                            3
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Grow</h3>
+                            <p class="mt-2 text-slate-600">
+                                Build consistency and create healthier everyday patterns.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16" aria-labelledby="cta-heading">
+            <div class="mx-auto max-w-5xl px-6">
+
+                <div class="rounded-3xl bg-cyan-600 px-8 py-14 text-center text-white md:px-16">
+
+                    <h2 id="cta-heading" class="text-3xl font-bold md:text-4xl">
+                        Ready to make small changes?
+                    </h2>
+
+                    <p class="mx-auto mt-4 max-w-xl text-cyan-50">
+                        Start exploring simple ways to make your everyday routine feel better.
+                    </p>
+
+                    <a href="signup.html"
+                       class="mt-7 inline-block rounded-lg bg-white px-6 py-3 font-semibold text-cyan-700 hover:bg-cyan-50">
+                        Create Your Account
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-3">
+
+            <section aria-label="About Tidewell">
+
+                <a href="../../index.html" class="flex items-center gap-2 text-xl font-bold text-teal-600">
+                    <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-600 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="20" height="20" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round"
+                             stroke-linejoin="round" aria-hidden="true">
+                            <path d="M11 20A7 7 0 0 1 4 13C4 5 12 3 20 3c0 8-2 17-10 17Z"/>
+                            <path d="M8 16c2-3 5-6 9-9"/>
+                        </svg>
+                    </span>
+                    Tidewell
+                </a>
+
+                <p class="mt-3 max-w-sm text-sm leading-6 text-slate-500">
+                    Small habits. Better days.
+                </p>
+            </section>
+
+            <nav aria-label="Footer navigation">
+                <h2 class="font-semibold text-slate-900">Explore</h2>
+
+                <div class="mt-4 space-y-2 text-sm text-slate-500">
+                    <a href="../../index.html" class="block hover:text-cyan-600">Home</a>
+                    <a href="about.html" class="block hover:text-cyan-600">About</a>
+                    <a href="contact.html" class="block hover:text-cyan-600">Contact</a>
+                </div>
+            </nav>
+
+            <nav aria-label="Account navigation">
+                <h2 class="font-semibold text-slate-900">Account</h2>
+
+                <div class="mt-4 space-y-2 text-sm text-slate-500">
+                    <a href="signin.html" class="block hover:text-cyan-600">Sign In</a>
+                    <a href="signup.html" class="block hover:text-cyan-600">Sign Up</a>
+                </div>
+            </nav>
+
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- Values -->
-  <section class="bg-white py-16">
-    <div class="mx-auto max-w-7xl px-6">
-
-      <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-widest text-cyan-600">
-          What We Value
-        </p>
-
-        <h2 class="mt-3 text-3xl font-bold text-slate-900">
-          Built around simple principles
-        </h2>
-
-        <p class="mx-auto mt-4 max-w-2xl text-slate-600">
-          Every part of Tidewell focuses on making wellness practical,
-          approachable, and easy to understand.
-        </p>
-      </div>
-
-      <div class="mt-12 grid gap-6 md:grid-cols-3">
-
-        <!-- Card 1 -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-lg">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl">
-            🌱
-          </div>
-
-          <h3 class="mt-5 text-xl font-bold text-slate-900">
-            Simplicity
-          </h3>
-
-          <p class="mt-3 leading-7 text-slate-600">
-            We keep ideas clear and routines easy to understand.
-          </p>
+        <div class="border-t border-slate-200 py-5 text-center text-sm text-slate-500">
+            <small>© 2026 Tidewell. All rights reserved.</small>
         </div>
 
-        <!-- Card 2 -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-lg">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl">
-            💙
-          </div>
-
-          <h3 class="mt-5 text-xl font-bold text-slate-900">
-            Balance
-          </h3>
-
-          <p class="mt-3 leading-7 text-slate-600">
-            We believe wellness is about creating balance in everyday life.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-lg">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl">
-            ✨
-          </div>
-
-          <h3 class="mt-5 text-xl font-bold text-slate-900">
-            Consistency
-          </h3>
-
-          <p class="mt-3 leading-7 text-slate-600">
-            Small actions become meaningful when they become consistent.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats -->
-  <section class="py-16">
-    <div class="mx-auto max-w-7xl px-6">
-
-      <div class="rounded-3xl bg-slate-900 p-8 text-white md:p-12">
-
-        <div class="grid gap-8 text-center md:grid-cols-4">
-
-          <div>
-            <p class="text-3xl font-bold">10K+</p>
-            <p class="mt-2 text-sm text-slate-300">Daily users</p>
-          </div>
-
-          <div>
-            <p class="text-3xl font-bold">50+</p>
-            <p class="mt-2 text-sm text-slate-300">Wellness routines</p>
-          </div>
-
-          <div>
-            <p class="text-3xl font-bold">24/7</p>
-            <p class="mt-2 text-sm text-slate-300">Accessible experience</p>
-          </div>
-
-          <div>
-            <p class="text-3xl font-bold">4.9/5</p>
-            <p class="mt-2 text-sm text-slate-300">User experience</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline -->
-  <section class="bg-white py-16">
-    <div class="mx-auto max-w-5xl px-6">
-
-      <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-widest text-cyan-600">
-          Our Approach
-        </p>
-
-        <h2 class="mt-3 text-3xl font-bold text-slate-900">
-          A simple path to better days
-        </h2>
-      </div>
-
-      <div class="mt-12 space-y-6">
-
-        <div class="flex gap-5 rounded-2xl border border-slate-200 p-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-600 font-bold text-white">
-            1
-          </div>
-
-          <div>
-            <h3 class="text-xl font-bold text-slate-900">
-              Discover
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Explore simple wellness ideas that match your everyday routine.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex gap-5 rounded-2xl border border-slate-200 p-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-600 font-bold text-white">
-            2
-          </div>
-
-          <div>
-            <h3 class="text-xl font-bold text-slate-900">
-              Practice
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Turn small ideas into simple actions that fit naturally into your day.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex gap-5 rounded-2xl border border-slate-200 p-6">
-          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-600 font-bold text-white">
-            3
-          </div>
-
-          <div>
-            <h3 class="text-xl font-bold text-slate-900">
-              Grow
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Build consistency and create healthier everyday patterns.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-16">
-    <div class="mx-auto max-w-5xl px-6">
-
-      <div class="rounded-3xl bg-cyan-600 px-8 py-14 text-center text-white md:px-16">
-        <h2 class="text-3xl font-bold md:text-4xl">
-          Ready to make small changes?
-        </h2>
-
-        <p class="mx-auto mt-4 max-w-xl text-cyan-50">
-          Start exploring simple ways to make your everyday routine feel better.
-        </p>
-
-        <a href="signup.html"
-          class="mt-7 inline-block rounded-lg bg-white px-6 py-3 font-semibold text-cyan-700 hover:bg-cyan-50">
-          Create Your Account
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 bg-white">
-    <div class="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-3">
-
-      <div>
-        <!-- Tidewell Brand with Leaf Icon -->
-        <a href="../../index.html" class="flex items-center gap-2 text-xl font-bold text-teal-600">
-          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-600 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="20" height="20" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor"
-                 stroke-width="2" stroke-linecap="round"
-                 stroke-linejoin="round" aria-hidden="true">
-              <path d="M11 20A7 7 0 0 1 4 13C4 5 12 3 20 3c0 8-2 17-10 17Z"/>
-              <path d="M8 16c2-3 5-6 9-9"/>
-            </svg>
-          </span>
-          Tidewell
-        </a>
-
-        <p class="mt-3 max-w-sm text-sm leading-6 text-slate-500">
-          Small habits. Better days.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-semibold text-slate-900">Explore</h4>
-        <div class="mt-4 space-y-2 text-sm text-slate-500">
-          <a href="../../index.html" class="block hover:text-cyan-600">Home</a>
-          <a href="about.html" class="block hover:text-cyan-600">About</a>
-          <a href="contact.html" class="block hover:text-cyan-600">Contact</a>
-        </div>
-      </div>
-
-      <div>
-        <h4 class="font-semibold text-slate-900">Account</h4>
-        <div class="mt-4 space-y-2 text-sm text-slate-500">
-          <a href="signin.html" class="block hover:text-cyan-600">Sign In</a>
-          <a href="signup.html" class="block hover:text-cyan-600">Sign Up</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="border-t border-slate-200 py-5 text-center text-sm text-slate-500">
-      © 2026 Tidewell. All rights reserved.
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>
